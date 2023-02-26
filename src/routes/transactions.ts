@@ -4,6 +4,13 @@ import { z } from 'zod'
 import { knex } from '../database'
 import { checkSessionIdExist } from '../middleware/check-session-id-exist'
 
+// tipos de teste
+// unitarios: unidade da sua aplicacao
+// integracao: comunicacao entre duas ou mais unidades
+// e2e - ponta a ponta: simulam um usuario operando em nossa aplicacao
+
+// Piramide de testes: E2E (não depende de nenhuma tecnologia, nao depende de arquitetura)
+
 // Cookies <-> Formas da gente manter contexto entre requesiçoes.
 
 export async function transactionRoutes(app: FastifyInstance) {
