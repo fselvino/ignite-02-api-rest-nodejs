@@ -2,7 +2,7 @@ import fastify from 'fastify'
 import cookie from '@fastify/cookie'
 
 import { transactionRoutes } from './routes/transactions'
-import { Log } from './middleware/log'
+// import { Log } from './middleware/log'
 
 export const app = fastify()
 
